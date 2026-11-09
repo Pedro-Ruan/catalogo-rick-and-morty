@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo de Personagens</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#personagens">Personagens</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="inicio">
+
+            <h1>Rick and Morty</h1>
+
+            <h2>Explore o universo de Rick and Morty</h2>
+
+            <p>Conheça os personagens, suas características e origens.</p>
+
+            <a href="#personagens">Explorar personagens</a>
+
+        </section>
+
+        <section id="personagens">
+
+            <h2>Catálogo de personagens</h2>
+
+            <div class="pesquisa-personagem">
+                <input
+                 type="text"
+                 id="campo-busca"
+                 placeholder="Digite o nome de um personagem"
+            >
+
+            <button id="btn-buscar">Buscar</button>
+            </div>
+
+            <div id="lista-personagens"></div>
+
+            <div class="paginacao">
+                <button id="btn-anterior">Anterior</button>
+
+                <span id="pagina-atual">Página 1</span>
+
+                <button id="btn-proxima">Próxima</button>
+            </div>
+
+            <!--Os cards serão criados dinamicamente pelo JavaScript-->
+            
+        </section>
+
+        <section id="sobre">
+
+            <h2>Sobre o projeto</h2>
+
+            <p>
+                Aplicação desenvolvida com HTML, CSS e JavaScript, utilizando a Rick and Morty API.
+            </p>
+
+            <div class="link-api">
+
+                <a href="https://rickandmortyapi.com/documentation"
+                    target="_blank"
+                     rel="noopener noreferrer">Documentação da API</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto acadêmico desenvolvido com HTML, CSS e JavaScript.</p>
+        <p>Dados fornecidos pela Rick and Morty API.</p>
+    </footer>
+
+</body>
+</html>

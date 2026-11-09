@@ -1,0 +1,305 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    background-color: #111827;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1f2937;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#inicio {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#inicio h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#inicio h2 {
+    color: #97ce4c;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    margin-bottom: 25px;
+}
+
+#inicio a {
+    display: inline-block;
+    background-color: #97ce4c;
+    color: #111827;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+#inicio a:hover {
+    background-color: #b5e66d;
+    transform: scale(1.05);
+}
+
+#personagens {
+    padding: 50px 5%;
+}
+
+#personagens h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+#lista-personagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    justify-content: center;
+    gap: 25px;
+}
+
+.card-personagem {
+    background-color: #1f2937;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.informacoes-personagem {
+    padding: 20px;
+}
+
+.informacoes-personagem h3 {
+    color: #97ce4c;
+    margin-bottom: 12px;
+}
+
+.informacoes-personagem p {
+    margin-bottom: 8px;
+}
+
+.area-imagem {
+    width: 100%;
+    height: 220px;
+    background-color: #111827;
+}
+
+.area-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.imagem-indisponivel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #9ca3af;
+}
+
+.imagem-indisponivel span {
+    font-size: 40px;
+}
+
+.imagem-indisponivel p {
+    font-size: 14px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.paginacao button {
+    background-color: #97ce4c;
+    color: #111827;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.paginacao button:hover {
+    background-color: #b5e477;
+    transform: translateY(-2px);
+}
+
+.paginacao button:disabled {
+    background-color: #374151;
+    color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#pagina-atual {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.pesquisa-personagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+#campo-busca {
+    width: 320px;
+    max-width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #374151;
+    border-radius: 8px;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#campo-busca::placeholder {
+    color: #9ca3af;
+}
+
+#campo-busca:focus {
+    border-color: #97ce4c;
+}
+
+#btn-buscar {
+    background-color: #97ce4c;
+    color: #111827;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-buscar:hover {
+    background-color: #b5e477;
+    transform: translateY(-2px);
+}
+
+#btn-buscar:disabled {
+    background-color: #374151;
+    color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#sobre {
+    background-color: #1f2937;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+#sobre h2 {
+    color: #97ce4c;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.link-api {
+    margin-top: 20px;
+}
+
+.link-api a {
+    color: #97ce4c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-api a:hover {
+    color: #b5e477;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #111827;
+    border-top: 1px solid #374151;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+
+    .paginacao {
+        flex-wrap: nowrap;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .paginacao button {
+        padding: 10px 14px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    #pagina-atual {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+}
+
+.paginacao button:active,
+#btn-buscar:active {
+    transform: scale(0.96);
+}
